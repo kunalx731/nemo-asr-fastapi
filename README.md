@@ -56,7 +56,7 @@ The server will start at http://127.0.0.1:8000.
 ```bash
 uvicorn app.main:app --reload
 ```
-#🧪 Testing the API
+## 🧪 Testing the API
 Use curl to test the transcription endpoint:
 
 ```bash
@@ -65,7 +65,7 @@ curl -X POST "http://127.0.0.1:8000/transcribe" -F "file=test_file.wav"
 ```
 📌 Ensure the audio is in .wav format, sampled at 16 kHz, and under 10 seconds for best performance.
 
-#📁 Project Structure
+## 📁 Project Structure
 ```bash
 
 nemo-asr-fastapi/
@@ -78,10 +78,10 @@ nemo-asr-fastapi/
 └── README.md
 
 ```
-#📄 License
+## 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-#🤝 Contributing
+## 🤝 Contributing
 Contributions, bug reports, and suggestions are welcome! Feel free to open an issue or a pull request.
 
 ## Notes
