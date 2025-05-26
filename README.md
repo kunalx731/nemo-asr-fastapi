@@ -56,12 +56,33 @@ The server will start at http://127.0.0.1:8000.
 ```bash
 uvicorn app.main:app --reload
 ```
-### 6.Test transcription endpoint
+🧪 Testing the API
+Use curl to test the transcription endpoint:
 
-You can use the included `sample.wav` file (5–10 seconds, 16kHz mono) to test the transcription:
 ```bash
-curl -X POST "http://localhost:8000/transcribe" -F "test_file.wav"
+
+curl -X POST "http://127.0.0.1:8000/transcribe" -F "file=.wav"
 ```
+📌 Ensure the audio is in .wav format, sampled at 16 kHz, and under 10 seconds for best performance.
+
+📁 Project Structure
+```bash
+
+nemo-asr-fastapi/
+├── app/
+│   └── main.py           # FastAPI app
+├── model_export.py       # Script to export NeMo model to ONNX
+├── requirements.txt      # Python dependencies
+├── Dockerfile            # Optional Docker setup
+├── .gitignore
+└── README.md
+
+```
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+🤝 Contributing
+Contributions, bug reports, and suggestions are welcome! Feel free to open an issue or a pull request.
 
 ## Notes
 - Audio must be a `.wav` file at 16kHz, duration 5–10 seconds.
