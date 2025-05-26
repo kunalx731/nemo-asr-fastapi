@@ -79,7 +79,7 @@ nemo-asr-fastapi/
 
 ```
 ## 📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [MIT License](LICENSE). file for details.
 
 ## 🤝 Contributing
 Contributions, bug reports, and suggestions are welcome! Feel free to open an issue or a pull request.
